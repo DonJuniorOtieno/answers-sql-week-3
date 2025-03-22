@@ -1,0 +1,14 @@
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+INSERT INTO student (id, fullName, age) VALUES
+(1, 'Stephen Mbugua', 18),
+(2, 'Don Otieno', 19),
+(3, 'Malik Ruma', 21);
+
+UPDATE student
+SET age = 20
+WHERE id = 2;
